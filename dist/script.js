@@ -1,6 +1,6 @@
 // 🔹 Navbar Toggle Logic
 const navLinks = document.querySelector("#nav-links");
-const navBars = document.querySelector("#nav-bars");
+const nav_Bars = document.querySelector("#nav-bars");
 
 function ToggleBars(e) {
   navLinks.classList.toggle("hidden");
@@ -11,18 +11,18 @@ function sideClick(e) {
   if (
     !navLinks.classList.contains("hidden") &&
     !navLinks.contains(e.target) &&
-    !navBars.contains(e.target)
+    !nav_Bars.contains(e.target)
   ) {
     navLinks.classList.add("hidden");
   }
 }
 
 document.body.addEventListener("click", sideClick);
-navBars.addEventListener("click", ToggleBars);
+nav_Bars.addEventListener("click", ToggleBars);
 
-// 🔹 Cat Fetching Logic (Scroll Only)
+// Fetching and Displying Data
+
 const URL = "https://api.thecatapi.com/v1/images/search?limit=12";
-// const URL = "https://porn-pictures-api.p.rapidapi.com/pornstars/female/1";
 const extractingDiv = document.querySelector("#photos");
 
 let loadCount = 0;
@@ -38,17 +38,24 @@ async function fetchCats() {
     const data = await res.json();
 
     data.forEach((cat) => {
+      // Image element
       const img = document.createElement("img");
       img.src = cat.url;
-      img.alt = "Pinterest-style Cat";
+      img.alt = "Gallery Cat";
       img.loading = "lazy";
       img.className =
-        "w-full mb-4 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 break-inside-avoid";
-      extractingDiv.appendChild(img);
+        "w-[250px] h-[180px] object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300";
+
+      // Wrapper div to center
+      const wrapper = document.createElement("div");
+      wrapper.className = "flex justify-center items-center";
+      wrapper.appendChild(img);
+
+      // Add to gallery
+      extractingDiv.appendChild(wrapper);
     });
 
     loadCount++;
-
     if (loadCount >= MAX_LOADS) {
       window.removeEventListener("scroll", onScrollLoad);
     }
@@ -59,13 +66,11 @@ async function fetchCats() {
   }
 }
 
-// 🔹 Scroll Trigger
 function onScrollLoad() {
   if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
     fetchCats();
   }
 }
 
-// 🔹 Initial Fetch & Scroll Listener
 fetchCats();
 window.addEventListener("scroll", onScrollLoad);
