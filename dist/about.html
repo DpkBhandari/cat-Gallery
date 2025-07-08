@@ -16,14 +16,14 @@
   </head>
 
   <body
-    class="bg-white selection:bg-white selection:text-black min-h-screen w-screen"
+    class="bg-white selection:bg-green-500 selection:text-black min-h-screen w-screen"
   >
    <!-- Navbar From Here -->
     <nav
       id="navBar"
       class="flex items-center shadow-lg justify-between p-4 text-black h-16"
     >
-      <section class="font-extrabold sm:text-xl text-xl cursor-pointer">
+      <section class="font-extrabold sm:text-xl text-2xl cursor-pointer">
         Deep
       </section>
       <section
@@ -35,8 +35,11 @@
       </section>
       <ul
         id="nav-links"
-        class="hidden absolute top-16 right-4 text-white bg-black text-center pt-6 rounded-xl w-36 text-md font-normal space-y-4 h-36 transition-all duration-300 ease-in-out md:flex md:flex-row md:items-center md:static md:text-black md:bg-transparent md:space-y-0 md:space-x-6 md:h-auto md:w-auto md:p-4 lg:text-xl"
-      >
+        class="hidden absolute top-16 right-4 text-white bg-black text-center pt-6 
+         rounded-xl w-36 text-md font-normal space-y-4 h-36 transition-all 
+         duration-300 ease-in-out md:flex md:flex-row md:items-center 
+         md:static md:text-black md:bg-transparent md:space-y-0 md:space-x-6 
+         md:h-auto md:w-auto md:p-4 lg:text-xl">
    <li><a href="index.html" class="block hover:text-pink-100">Home</a></li>
         <li>
           <a href="about.html" class="block hover:text-pink-100">About</a>
@@ -46,6 +49,79 @@
         </li>
       </ul>
     </nav>
-    <main class="min-h-screen w-screen"></main>
+
+    <!-- Main About Section From Here  -->
+<main class="h-screen w-screen flex items-center justify-center">
+  <section class="h-[80%] w-[80%] shadow-2xl rounded-lg flex flex-col items-center justify-between">
+    
+    <h1 class="text-3xl font-bold text-center p-6 border-b-[2px] border-b-black leading-6">
+      🔥 About
+    </h1>
+    
+    <p class="text-md md:text:xl text-justify h-96 flex w-[25rem] md:w-[35rem] mt-8 items-center justify-center  px-12 leading-relaxed text-black">
+      &nbsp;&nbsp;&nbsp;Welcome to our NSFW gallery – a curated collection of adult content powered by public APIs. This platform is built to deliver high-quality visual content with smooth performance and clean design. We focus on simplicity, speed, and user privacy — no signups, no tracking, just pure content.
+      <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you enjoy browsing, consider supporting us with a small donation. Your contribution helps keep this project alive and free for all.
+      <br /><br />
+      Thanks for being here.
+    </p>
+
+   <section class="h-80 w-full flex justify-center  items-center flex-col  m-8 text-md md:flex-row md:gap-4 ">
+
+     <a href="#" class="h-16 bg-white border-2 border-black shadow-4xl font-medium  rounded-xl w-40 flex items-center justify-center mt-4 hover:bg-black hover:text-white hover:scale-110  transition delay-500 duration-200 ease-in-out">
+      Donate $
+    </a>
+     <a href="#" class="h-16 bg-white border-2 border-black shadow-4xl font-medium  rounded-xl w-40 flex items-center justify-center mt-4 hover:bg-black hover:text-white ">
+      Xfree.com
+    </a>
+
+    <a href="#" class="h-16 bg-white border-2 border-black shadow-xl font-medium rounded-xl w-40 flex items-center justify-center mt-4  hover:bg-black hover:text-white hover:scale-110  transition delay-500 duration-200 ease-in-out">
+      X (Twitter)
+    </a>
+
+    <a href="#" class="h-16 bg-white  border-2 border-black shadow-xl font-medium  rounded-xl w-40 flex items-center justify-center mt-4  hover:bg-black hover:text-white hover:scale-110  transition delay-500 duration-200 ease-in-out">
+      Telegram
+    </a></section>
+   
+  </section>
+</main>
+
+    <!-- Footer Section From Here -->
+
+ <footer
+      class="sm:h-24 md:h-16 bg-black w-screen z-40 text-center text-white text-xl flex flex-col md:flex-row items-center justify-between font-normal p-4 space-y-2 md:space-y-0"
+    >
+      <!-- Name -->
+      <section class="text-sm font-semibold">Made By : Deepak Bhandari</section>
+
+      <!-- Social Links -->
+      <ul class="flex gap-2 md:gap-4 text-sm">
+        <li>
+          <a href=" https://www.instagram.com/mr.dpk.b/" class="hover:underline"
+            >Instagram</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.linkedin.com/in/deepak-bhandari-500467355/"
+            class="hover:underline"
+            >Linkdin</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/DpkBhandari" class="hover:underline"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+
+      <!-- Copyright -->
+      <section class="text-xs md:text-sm text-gray-300 text-center">
+        &copy; 2025 Deep. <br class="md:hidden" />
+        All rights reserved.
+      </section>
+    </footer>
+<script src="script.js"></script>
   </body>
 </html>

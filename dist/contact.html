@@ -15,7 +15,7 @@
     />
   </head>
   <body
-    class="bg-white selection:bg-white selection:text-black min-h-screen w-screen"
+    class="bg-white selection:bg-green-500 selection:text-black min-h-screen w-screen"
   > 
   <!-- Navbar From Here -->
     <nav
@@ -45,5 +45,90 @@
         </li>
       </ul>
     </nav>
+<main class="h-screen w-screen sss flex items-center justify-center">
+  <section class="h-[80%] w-[90%] md:w-[60%] shadow-2xl  rounded-lg flex flex-col justify-center items-center p-6">
+    
+
+
+      <form action="https://formsubmit.co/code2deepak@gmail.com" method="POST" class="w-full space-y-4">
+
+      <!-- 🔒 Anti-spam & redirect -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+      <input type="text" name="_honey" style="display:none">
+
+      <!-- Full Name -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <label class="font-semibold text-md w-full md:w-1/3">Full Name :</label>
+        <input type="text" name="name" required class="h-12 w-full md:w-2/3 p-3 border-2 border-black rounded-md" />
+      </div>
+
+      <!-- Email -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <label class="font-semibold text-md w-full md:w-1/3">Email :</label>
+        <input type="email" name="email" required class="h-12 w-full md:w-2/3 p-3 border-2 border-black rounded-md" />
+      </div>
+
+      <!-- Subject -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <label class="font-semibold text-md w-full md:w-1/3">Subject :</label>
+        <input type="text" name="subject" class="h-12 w-full md:w-2/3 p-3 border-2 border-black rounded-md" />
+      </div>
+
+      <!-- Message -->
+      <div class="flex flex-col">
+        <label class="font-semibold text-md mb-2">Message :</label>
+        <textarea name="message" rows="4" required class="w-full p-3 border-2 border-black rounded-md resize-none"></textarea>
+      </div>
+
+      <!-- Submit -->
+      <div class="flex justify-center">
+        <button type="submit" class="bg-black h-12 w-40 text-white px-6 py-2 rounded-md hover:bg-white hover:text-black hover:border hover:border-black transition-all">
+          Submit
+        </button>
+      </div>
+    </form>
+
+  </section>
+</main>
+
+
+
+        <!-- Footer Section From Here -->
+ <footer
+      class="sm:h-24 md:h-16 bg-black w-screen z-40 text-center text-white text-xl flex flex-col md:flex-row items-center justify-between font-normal p-4 space-y-2 md:space-y-0"
+    >
+      <!-- Name -->
+      <section class="text-sm font-semibold">Made By : Deepak Bhandari</section>
+
+      <!-- Social Links -->
+      <ul class="flex gap-2 md:gap-4 text-sm">
+        <li>
+          <a href=" https://www.instagram.com/mr.dpk.b/" class="hover:underline"
+            >Instagram</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.linkedin.com/in/deepak-bhandari-500467355/"
+            class="hover:underline"
+            >Linkdin</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/DpkBhandari" class="hover:underline"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+
+      <!-- Copyright -->
+      <section class="text-xs md:text-sm text-gray-300 text-center">
+        &copy; 2025 Deep. <br class="md:hidden" />
+        All rights reserved.
+      </section>
+    </footer>
+     <script src="script.js"></script>
   </body>
 </html>
