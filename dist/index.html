@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Gallery Using Api</title>
+    <link rel="stylesheet" href="output.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="bg-white selection:bg-white selection:text-black min-h-screen w-screen"
+  >
+    <!-- Navbar -->
+    <nav
+      class="flex items-center shadow-lg justify-between p-4 text-black h-16"
+    >
+      <section class="font-extrabold sm:text-xl text-xl cursor-pointer">
+        Deep
+      </section>
+      <section
+        id="nav-bars"
+        class="sm:text-xl md:text-2xl md:hidden cursor-pointer mx-2"
+        aria-label="Toggle Menu"
+      >
+        <i class="fa-solid fa-bars-staggered"></i>
+      </section>
+      <ul
+        id="nav-links"
+        class="hidden absolute top-16 right-4 text-white bg-black text-center pt-6 rounded-xl w-40 text-md font-normal space-y-4 h-48 transition-all duration-300 ease-in-out md:flex md:flex-row md:items-center md:static md:text-black md:bg-transparent md:space-y-0 md:space-x-6 md:h-auto md:w-auto md:p-4 lg:text-xl"
+      >
+        <li><a href="#" class="block hover:text-pink-100">Home</a></li>
+        <li><a href="#" class="block hover:text-pink-100">About</a></li>
+        <li><a href="#" class="block hover:text-pink-100">Logout</a></li>
+        <li><a href="#" class="block hover:text-pink-100">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="h-full w-screen">
+      <div
+        id="photos"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"
+      ></div>
+    </main>
+
+    <footer
+      class="sm:h-24 md:h-16 bg-black w-screen z-40 text-center text-white text-xl flex flex-col md:flex-row items-center justify-between font-normal p-4 space-y-2 md:space-y-0"
+    >
+      <!-- Name -->
+      <section class="text-sm font-semibold">Made By : Deepak Bhandari</section>
+
+      <!-- Social Links -->
+      <ul class="flex gap-2 md:gap-4 text-sm">
+        <li>
+          <a href=" https://www.instagram.com/mr.dpk.b/" class="hover:underline"
+            >Instagram</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.linkedin.com/in/deepak-bhandari-500467355/"
+            class="hover:underline"
+            >Linkdin</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/DpkBhandari" class="hover:underline"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+
+      <!-- Copyright -->
+      <section class="text-xs md:text-sm text-gray-300 text-center">
+        &copy; 2025 Deep. <br class="md:hidden" />
+        All rights reserved.
+      </section>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
